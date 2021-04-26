@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String function</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="left">
+    <div style="text-align: center;">
+    <h3>Length</h3>
+    <input type="text" id="ip" placeholder="Enter the text">
+    <input type="button" name="ip1" onclick="len()" value="submit"> <br><br>
+    
+    <h3>Slice( )</h3>
+    <input type="text" id="sample" placeholder="Enter the text">
+    <input type="number" id="ip1" placeholder="enter the number" min="0" max="11"> <input type="number" min="0" max="11" id="ip2" placeholder="enter the number">
+    <input type="submit" onclick="S_slice()" value="submit"><br><br>
+
+
+    <h3>Substring( )</h3>
+    <input type="text" id="sample1" placeholder="Enter the text">
+    <input type="number" id="ip4" placeholder="enter the number"> <input type="number" id="ip5" placeholder="enter the number">
+    <input type="submit" onclick="S_substring()" value="submit"><br><br>
+
+
+    <h3>To Upper Case</h3>
+    <input type="text" id="up" placeholder="Enter the text">
+    <input type="submit" onclick="S_upper()" value="submit"><br><br>
+    </div>
+</div>
+<div class="right">
+    <div style="text-align: center;">
+        <h1>Output:</h1>
+        <p id="display"></p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
