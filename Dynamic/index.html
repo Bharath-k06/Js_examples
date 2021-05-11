@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic element creation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: black;">
+    <div>
+        <img src="back.jpg" alt="Background image" onmouseover="addElement()">
+        <p style="text-align: center;color: green;font-size: 200%;">Creation dynamic Element</p>
+        <p style="text-align: center;color: green;font-size: 200%;">On mouse over on the image dynamic element "Marquee" will be created</p>
+    </div>
+    <p id="dis"></p>
+</body>
+<script>
+    function addElement(){
+        let b = document.createElement("marquee");
+        
+        document.body.append(b);
+
+        b.innerText="This element was creatd dynamically";
+        b.style.color = "teal"
+        b.style.fontSize = "150%"
+        b.direction = "Right"
+    }
+    function func(){
+        let ele = document.getElementById("1").value;
+        document.getElementById("dis").innerHTML=ele.length;
+    }
+</script>
+</html>
