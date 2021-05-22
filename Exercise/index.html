@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+    <style>
+      button{
+        width:13%;background-color: seagreen;height: 40px;padding: 10px;
+
+      }  
+      label{
+          font-style: italic;
+          font-size: large;
+          color: darkslateblue;
+      }
+      hr{
+        width: 14%;color: darkred;
+      }
+    </style>
+</head>
+<body style="background: teal;">
+    <section style="text-align: center;">
+        <h2>Math Object</h2>
+        <label>Get PI value</label>
+        <input type="submit" value="Get" onclick="pi()"><br><br>
+        <input type="number" id="ip"><br><br>
+        <select name="" id="sel">
+            <option value="c">Ceil</option>
+            <option value="s">POW(x,3)</option>
+            <option value="i">Sign</option>
+            <option value="r">Sqrt</option>
+        </select>
+        <input type="submit" value="OK" id="Ok" onclick="func()">
+        <br><br>
+        <p id="dis"> </p>
+    </section>
+    <hr style="width: 40%;color:green;">
+    <section style="text-align: center;">
+        <h2>Date Object</h2>
+        <select name="" id="sel1">
+            <option value="D">Get Current Date</option>
+            <option value="T">Get Time</option>
+            <option value="I">ISO Standards</option>
+            <option value="U">UTC Standards</option>
+        </select>
+        <input type="submit" value="OK" onclick="D_fun()">
+        <p id="dis1"></p>
+    </section><hr style="width: 40%; color:green;">
+
+
+    <section style="text-align: center;">
+        <h2>Number Object</h2>
+        <input type="text"  id="ip3" placeholder="Enter the number" ><br><br><br>
+        <button onclick="N_fun()">To Fixed</button><br><hr>
+        <button onclick="N_fun1()">To Precision</button><br><hr > 
+        <button onclick="N_fun2()">To Exponential</button><br><hr >
+        <button onclick="N_fun3()">Value Of</button>
+
+
+
+        </div>
+        <p id="dis2"></p>
+
+    </section>
+<script src="script.js"></script>
+</body>
+</html>
