@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .div1{
+            background-color: black;font-size: 25px;color:teal;text-align: center;height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  left: 0;
+  font-style: italic;
+        }
+        .div2{
+            font-size: 25px;height: 250px;text-align: center;color:teal;height: 100%;font-style: italic;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    right: 0;
+        }
+        .opt{
+            width: 35%;font-size:100%;color:black;background-color:skyblue;font-style: italic;
+        }
+        .but{
+            width: 30%;height: 3.5%;background-color: green;font-size: 100%;font-style: italic;
+        }
+    </style>
+</head>
+<body>
+<div class="div1">
+    <br><br>
+    <h1>Get Information About Selected Planet</h1>
+        <select name="" id="sel" class="opt">
+            <option value="c">Mercury</option>
+            <option value="s">Venus</option>
+            <option value="e">Earth</option>
+            <option value="i">Mars</option>
+            <option value="r">Jupiter</option>
+            <option value="U">Uranus</option>
+            <option value="S">Saturn</option>
+            <option value="N">Neptune</option>
+        </select><br><br>
+        <input type="submit" value="OK" id="Ok" onclick="func()" class="but">
+        <br><br>
+</div>
+<div class="div2">
+    <h3>Information</h3>
+    <hr style="margin-right: 40%;margin-left: 40%;">
+    <p id="dis1"> </p>
+    <p id="dis2"></p>
+    <p id="dis3"></p>
+    <p id="dis4"></p>
+</div>
+<script src="script.js"></script>
+       
+
+    
+</body>
+</html>
